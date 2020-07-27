@@ -86,7 +86,17 @@ There is also a MySQL demo that is located in the kubernetes_yaml/mysql_demo fol
 
 Open the kubernetes_yaml/mysql_demo/example_commands.txt file for step by step instructions to follow for the mySQl demo
 
-### PSO demo
+### PSO & EXPLORER Demos
+
+```
+kubectl get svc --namespace psoexpl -w pso-explorer
+```
+
+Jot down port number
+
+open browser window with VM IP:Port number from above
+
+PSO EXPLORER  will open
 
 #### Create the PVC. Check that it is created on the Pure
 ```
