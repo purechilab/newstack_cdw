@@ -1,6 +1,6 @@
 arrays:
   FlashArrays:
     - MgmtEndPoint: "10.89.22.37"
-      APIToken: "1e6ef4bc-869a-3336-91cd-72988ae8875e"
+      APIToken: "696757d3effb-bcc0-af4d-b6e5d7e79cbd"
     - #MgmtEndPoint: "10.224.113.20"
       #APIToken: "79494678-19fa-60e4-7d3d-00a3df3338d2"
