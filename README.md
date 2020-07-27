@@ -56,9 +56,10 @@ sudo apt install git
 ### Installing the demo
 clone the repo with:
 ```
-git clone https://purechilab:Madne$$@99@github.com/purechilab/newstack_cdw
+git clone https://github.com/purechilab/newstack_cdw
 
-
+username :purechilab
+password :Madne$$@99
 
 cd newstack_cdw
 ```
