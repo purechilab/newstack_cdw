@@ -1,17 +1,17 @@
-# Newstack_demo Repository
+# Newstack_cdw Repository
 
-This repo has scripts to spin up Newstack Demo in an Ubuntu 20.04 lab
+This repo has scripts to spin up Newstack Demo in an VM or Baremetal Ubuntu 20.04 lab
 
 It currently includes Anisible, Kubernetes, PSO and PSO explorer.
 
-Many thanks are due to Brian Kuebler , Chris Crow for the original test drive idea, as well as all the ansible yaml files.
+Many thanks are due to Brian Kuebler & Chris Crow from Pure Storage for the original test drive idea, as well as all the ansible yaml files.
 
 ### Requirements
 You will need a Ubuntu 20.04 install.  
 
 The prereqs for this eviornment are as follows
 
-Server VM has to have at least 1 Nic connected to the Lan/Wan and 1 NIC connected to your iSCSI network
+Server VM has to have at least 1 NIC connected to the Lan/Wan and 1 NIC connected to your iSCSI network
 
 Access to at least 1 Pure FA running Purity 5.3 or higher (can be physical or VM)
 
@@ -56,8 +56,9 @@ sudo apt install git
 ### Installing the demo
 clone the repo with:
 ```
-git clone https://pureschilab/newstack_demo
-cd newstack_demo
+git clone https://pureschilab/newstack_cdw
+
+cd newstack_cdw
 ```
 
 Run the install_ubuntu.sh script
@@ -114,7 +115,9 @@ kubectl scale deploy minio-deployment --replicas=0
 
 ## Ansible Demo
 
+THe Full Ansible Demo requires access to 2 x FlashArrays
 
+Demo 3 is an active cluster playbook. you can skip this if you only have 1 array
 
 ### Running the Demo
 
