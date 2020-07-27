@@ -47,7 +47,7 @@ sudo apt install -y scsitools --assume-yes
 # Typing "ansible-playbook" everytime is a hassle...
 echo "" >> ~/.bashrc
 echo "alias ap='ansible-playbook'" >> ~/.bashrc
-echo "alias P='cd ~/newstack_demo/ansible_playbooks'" >> ~/.bashrc
+echo "alias P='cd ~/newstack_cdw/ansible_playbooks'" >> ~/.bashrc
 
 
 #generate an ssh key for local login:
@@ -58,7 +58,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 #clone required repositories
 echo "#### Clone kubespray repo and copy inventory in to repo ####"
 git clone https://github.com/kubernetes-sigs/kubespray ~/kubespray
-cp -rfv ~/newstack_demo/inventory/testdrive ~/kubespray/inventory/
+cp -rfv ~/newstack_cdw/inventory/testdrive ~/kubespray/inventory/
 cd ~/kubespray
 
 # Install prereqs as we now have pip3
@@ -108,5 +108,3 @@ helm install pso-explorer pso-explorer/pso-explorer --namespace psoexpl
 sudo pip3 install purestorage
 
 echo "#### For kubectl to work, you may need to run 'source ~/.bashrc' ####"
-
-
