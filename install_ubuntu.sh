@@ -88,7 +88,7 @@ echo "#### Update helm repos and install PSO ####"
 helm repo add pure https://purestorage.github.io/helm-charts
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo update
-helm install pure-storage-driver pure/pure-csi --namespace default -f ~/newstack_demo/kubernetes_yaml/pso_values.yaml
+helm install pure-storage-driver pure/pure-csi --namespace default -f ~/newstack_cdw/kubernetes_yaml/pso_values.yaml
 
 
 #Install PSO EXPLORER
