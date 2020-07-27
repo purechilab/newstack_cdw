@@ -1,21 +1,21 @@
 # Newstack_cdw Repository
 
-This repo has scripts to spin up Newstack Demo in an VM or Baremetal Ubuntu 20.04 lab
+This repo has scripts to spin up Newstack Demo in an VM or Bare-metal Ubuntu 20.04 lab
 
-It currently includes Anisible, Kubernetes, PSO and PSO explorer.
+It currently includes Ansible, Kubernetes, PSO and PSO explorer.
 
-Many thanks are due to Brian Kuebler & Chris Crow from Pure Storage for the original test drive idea, as well as all the ansible yaml files.
+Many thanks are due to Brian Kuebler & Chris Crow from Pure Storage for the original test drive idea, as well as all the Ansible yaml files.
 
 ### Requirements
 You will need a Ubuntu 20.04 install.  
 
-The prereqs for this eviornment are as follows
+The pre-reqs for this environment are as follows
 
 Server VM has to have at least 1 NIC connected to the Lan/Wan and 1 NIC connected to your iSCSI network
 
 Access to at least 1 Pure FA running Purity 5.3 or higher (can be physical or VM)
 
-Update/upgrade the enviornment using apt get
+Update/upgrade the environment using apt get
 ```
  sudo apt-get update
  sudo apt-get upgrade
@@ -34,7 +34,7 @@ if no
 sudo apt-get install openssh-server
 ```
 
-Enable the ssh service by typing 
+Enable the ssh service by typing
 
 ```
 sudo systemctl enable ssh
@@ -66,15 +66,15 @@ cd newstack_cdw
 
 Run the install_ubuntu.sh script
 
-Note that this will also install all of the ansible bits as well as the Pure PSO drivers and the new PSO explore bits
+Note that this will also install all of the Ansible bits as well as the Pure PSO drivers and the new PSO explore bits
 
-This will take betwen 5-10 minutes depending on enviornment. Great time for you to explain whats going on during the install.
+This will take between 5-10 minutes depending on environment. Great time for you to explain whats going on during the install.
 
 
-### Adding Flash Array to enviornment
+### Adding Flash Array to environment
 Open newstack_demo/kubernetes_yaml/pso_values.yaml with nano or vi
 
-Edit management end points and API's with values from your Flasharay
+Edit management end points and API's with values from your FlashArrays
 
 control-x to save
 
@@ -84,7 +84,7 @@ The demo PSO demo scripts are located in the kubernetes_yaml directory. They are
 
 There is also a MySQL demo that is located in the kubernetes_yaml/mysql_demo folder
 
-Open the kubernetes_yaml/mysql_demo/example_commands.txt file for step by step in structions to follow for the mySQl demo
+Open the kubernetes_yaml/mysql_demo/example_commands.txt file for step by step instructions to follow for the mySQl demo
 
 ### PSO demo
 
@@ -118,7 +118,7 @@ kubectl scale deploy minio-deployment --replicas=0
 
 ## Ansible Demo
 
-THe Full Ansible Demo requires access to 2 x FlashArrays
+The Full Ansible Demo requires access to 2 x FlashArrays
 
 Demo 3 is an active cluster playbook. you can skip this if you only have 1 array
 
@@ -127,7 +127,7 @@ Demo 3 is an active cluster playbook. you can skip this if you only have 1 array
 This demo allows the driver to run playbooks in the ansible_playbooks directory. They are numbered to run through a progression.
 
 You can run each playbook with 'ansible-playbook -b <yaml file>'
-  
+
 The Active cluster demo requires access to two arrays (PSO Yaml file will need the info on both arrays)  
 
 More notes to come...
@@ -135,7 +135,7 @@ More notes to come...
 
 
 # Additional customizations
-initial requirments
+initial requirements
 
 - SSH server Running
 - GIT installed
