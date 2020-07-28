@@ -61,16 +61,8 @@ git clone https://github.com/purechilab/newstack_cdw
 username :purechilab
 password :Madne$$@99
 
-cd newstack_cdw
+cd newstack_demo/kubernetes_yaml/
 ```
-
-Run the install_ubuntu.sh script
-
-Note that this will also install all of the Ansible bits as well as the Pure PSO drivers and the new PSO explore bits
-
-This will take between 5-10 minutes depending on environment. Great time for you to explain whats going on during the install.
-
-
 ### Adding Flash Array to environment
 Open newstack_demo/kubernetes_yaml/pso_values.yaml with nano or vi
 
@@ -78,6 +70,25 @@ Edit management end points and API's with values from your FlashArrays
 
 control-x to save
 
+```
+cd ..
+```
+Run the install_ubuntu.sh script
+```
+./install_ubuntu.sh
+```
+
+Note that this will also install all of the Ansible bits as well as the Pure PSO drivers and the new PSO explore bits
+
+This will take between 8-15 minutes depending on environment. Great time for you to explain whats going on during the install.
+
+### Post install
+ ```
+ source ~/.bashrc
+ kubectl get pods
+ kubectl get nodes
+ kubectl get svc
+```
 ### Demos
 
 The demo PSO demo scripts are located in the kubernetes_yaml directory. They are designed to be run in order as there may be dependancies.
