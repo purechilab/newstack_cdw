@@ -54,33 +54,26 @@ sudo apt install git
 
 
 ### Installing the demo
-clone the repo with:
+
+Update/upgrade the enviornment using apt get
 ```
-git clone https://github.com/purechilab/newstack_cdw
+ sudo apt-get update
+ sudo apt-get upgrade
+ ```
+
+clone the repo with:
+```git clone https://github.com/purechilab/newstack_cdw```
 
 username :purechilab
 password :Madne$$@99
+```cd newstack_demo/kubernetes_yaml/```
 
-cd newstack_demo/kubernetes_yaml/
-```
-### Adding Flash Array to environment
-Open newstack_demo/kubernetes_yaml/pso_values.yaml with nano or vi
-
-Edit management end points and API's with values from your FlashArrays
-
-control-x to save
-
-```
-cd ..
-```
 Run the install_ubuntu.sh script
-```
-./install_ubuntu.sh
-```
+```./install_ubuntu.sh```
 
 Note that this will also install all of the Ansible bits as well as the Pure PSO drivers and the new PSO explore bits
 
-This will take between 8-15 minutes depending on environment. Great time for you to explain whats going on during the install.
+This will take between 8-15 minutes depending on environment. Great time for you to explain whats going on during the install. Feel free to ``` cat install_ubuntu.sh```  to walk through whats being done in the background
 
 ### Post install
  ```
