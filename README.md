@@ -145,8 +145,7 @@ You can run each playbook with 'ansible-playbook -b <yaml file>'
 
 The Active cluster demo requires access to two arrays (PSO Yaml file will need the info on both arrays)  
 
-More notes to come...
-
+More notes to come..
 
 
 # Additional customizations
