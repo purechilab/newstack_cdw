@@ -55,13 +55,7 @@ sudo apt install git
 
 ### Installing the demo
 
-Update/upgrade the enviornment using apt get
-```
- sudo apt-get update
- sudo apt-get upgrade
- ```
-
-clone the repo with:
+clone the demo repo with:
 ```git clone https://github.com/purechilab/newstack_cdw```
 
 username :purechilab
