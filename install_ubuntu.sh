@@ -11,6 +11,10 @@ echo "#####################################"
 #remove password requirement for sudo
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 
+#makesure all packages are updated
+sudo apt-get update
+sudo apt-get upgrade -f
+
 #install PIP3
 sudo apt install python3-pip --assume-yes
 
