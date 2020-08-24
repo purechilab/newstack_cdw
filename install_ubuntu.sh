@@ -13,7 +13,7 @@ echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 
 #makesure all packages are updated
 sudo apt-get update
-sudo apt-get upgrade -f
+sudo apt-get upgrade --assume-yes
 
 #install PIP3
 sudo apt install python3-pip --assume-yes

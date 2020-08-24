@@ -61,7 +61,7 @@ clone the demo repo with:
 username :purechilab
 password :Madne$$@99
 
-```cd newstack_cdw/kubernetes_yaml/```
+```cd newstack_cdw```
 
 Run the install_ubuntu.sh script
 ```./install_ubuntu.sh```
