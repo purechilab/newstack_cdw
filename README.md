@@ -113,16 +113,18 @@ You can now log in to minio using the service port. Find the port with the kubec
 
 Continuing with the rest of the commands, which will take a snap and clone a new PVC from that snapshot
 
-You can then continue with spinning up a new minio instance (default will be port 9001)
-
-**Don't forget that adding the snapshot spec adds the below object type**
-```
-kubectl get VolumeSnapshots
-```
-
 For a snap restore demo, you can scale to 0 replicas, restore the snap, and scale replicas to 1. The command to scale replicas is:
 
 kubectl scale deploy minio-deployment --replicas=0
+
+restore snap using step 6
+start new minio instance step 7
+create minio service step 8
+
+```kubectl scale deploy minio-deployment --replicas=1```
+Open new minio instance (default will be port 9001)
+
+
 
 
 ## Ansible Demo
