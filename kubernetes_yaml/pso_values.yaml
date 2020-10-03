@@ -1,0 +1,7 @@
+clusterID: purenewstackdemo
+arrays:
+  FlashArrays:
+    - MgmtEndPoint: "10.89.22.37"
+      APIToken: "696757d3-effb-bcc0-af4d-b6e5d7e79cbd"
+
+  

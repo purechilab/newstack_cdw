@@ -4,6 +4,6 @@
 # Te API token must be for a user with a minimum of Storage Admin privilaege
 arrays:
   - url: 10.89.22.37
-    api: 6340a0a1-40cd-7f95-d9fc-9c3f0b1331ae
-  - #url: 10.224.113.20
-    #api: 79494678-19fa-60e4-7d3d-00a3df3338d2
+    api: b6340a0a1-40cd-7f95-d9fc-9c3f0b1331ae
+ # - url: 10.224.113.211
+ #   api: 46be38fe-8c7f-489a-6407-b6100d0c6857
