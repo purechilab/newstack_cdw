@@ -21,10 +21,10 @@ sudo apt install python3-pip --assume-yes
 
 # Install SDK
 
-echo "####  Installing the Pure Storage SDK  ####"
-pip3 install purestorage
-pip3 install jmespath
-pip3 install ansible
+#echo "####  Installing the Pure Storage SDK  ####"
+#pip3 install purestorage
+#pip3 install jmespath
+#pip3 install ansible
 # Install the Pure Storage collection
 
 # Ansible is being installed with PIP3, so we need to update the path for the users
@@ -68,7 +68,7 @@ cd ~/kubespray
 
 # Install prereqs as we now have pip3
 echo "#### Install kubespray prereqs ####"
-pip3 install -r requirements.txt
+#pip3 install -r requirements.txt
 
 # Install kubernetes
 echo "#### Install kubernetes ####"
