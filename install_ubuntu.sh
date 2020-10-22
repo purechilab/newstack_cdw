@@ -22,9 +22,9 @@ sudo apt install python3-pip --assume-yes
 # Install SDK
 
 #echo "####  Installing the Pure Storage SDK  ####"
-#pip3 install purestorage
-#pip3 install jmespath
-#pip3 install ansible
+pip3 install purestorage
+pip3 install jmespath
+pip3 install ansible
 # Install the Pure Storage collection
 
 # Ansible is being installed with PIP3, so we need to update the path for the users
