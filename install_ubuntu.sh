@@ -73,6 +73,7 @@ echo "#### Install kubespray prereqs ####"
 # Install kubernetes
 echo "#### Install kubernetes ####"
 ansible-playbook -i inventory/testdrive/inventory.ini cluster.yml -b
+sudo snap install helm --classic
 
 # configure kubectl. needs to be updated as it only works
 
