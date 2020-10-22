@@ -14,7 +14,7 @@ echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 #makesure all packages are updated
 sudo apt-get update
 sudo apt-get upgrade --assume-yes
-sudo apt-get install openvm-tools-tools-desktop --assume-yes
+sudo apt-get install open-vm-tools-desktop --assume-yes
 
 #install PIP3
 sudo apt install python3-pip --assume-yes
