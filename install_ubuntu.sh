@@ -34,8 +34,7 @@ source ~/.bashrc -i
 
 echo "#### Installing the Purestorage Ansible Collection  ####"
 
-ansible-galaxy collection install purestorage.flasharray
-
+ansible-galaxy collection install purestorage.flasharray -p ~/.ansible/collections
 
 #install Iscsi-tools
 sudo apt install open-iscsi --assume-yes
